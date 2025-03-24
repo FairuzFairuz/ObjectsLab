@@ -45,7 +45,7 @@ Exercise 4
 Solve Exercise 4 here:
 */
 
-game.party[0] = "Charmander";
+game.party[0] = pokemon[3];
 //console.log(game);
 
 /*
@@ -57,7 +57,7 @@ Exercise 5
 Solve Exercise 5 here:
 */
 //pikachu, squirtle, bulbasaur
-game.party.push("Pikachu", "Squirtle", "Bulbasaur");
+game.party.push(pokemon[24], pokemon[0], pokemon[6]);
 //console.log(game);
 
 /*
@@ -94,8 +94,8 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 7 here:
 */
 
-game.party.splice(0, 1, "Charmeleon");
-//console.log(game);
+game.party.splice([0], 1, pokemon[4]);
+console.log(game);
 
 /*
 Exercise 8
@@ -165,7 +165,7 @@ function catchPokemon(pokemon) {
 catchPokemon("Charizard");
 
 // Log the game.items array to confirm the decrement
-console.log(game.items);
+//console.log(game.items);
 
 /*
 Exercise 12
@@ -215,7 +215,7 @@ game.gymStatus = function () {
       gymTally.incomplete++;
     }
   }
-  console.log(gymTally);
+  //console.log(gymTally);
 };
 
 // might be wrong
@@ -233,7 +233,7 @@ Solve Exercise 14 here:
 */
 
 game.partyCount = game.party.length;
-console.log(game.partyCount);
+//console.log(game.partyCount);
 
 /*
 Exercise 15
